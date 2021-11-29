@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
 
 app.use('/posts', postRoutes);
-
 const CONNECTION_URL = "mongodb+srv://root:root123@cluster0.krr0r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const PORT = process.env.PORT|| 5000;
 
